@@ -178,7 +178,115 @@ if option == 'Pre-Solutioning':
 
         res = send_questions(prompt)
 
+
+######################################################################################################################################################
+
+import streamlit as st
+from streamlit_option_menu import option_menu
+from streamlit import runtime
+from streamlit.runtime.scriptrunner import get_script_run_ctx
+
+
+import os, sys
+import requests
+
+
+import json
+# import gptQA
+
+
+st.set_page_config(layout="wide")
+
+    
+def set_page_container_style():
+    padding_top = 1.6
+    st.markdown(f"""
+        <style>
+        .block-container{{
+            padding-top: {padding_top}rem;    }}
+    </style>""",
+        unsafe_allow_html=True,
+    )
+
+def get_remote_ip() -> str:
+    """Get remote ip."""
+
+    try:
+        ctx = get_script_run_ctx()
+        if ctx is None:
+            return None
+
+        session_info = runtime.get_instance().get_client(ctx.session_id)
+        if session_info is None:
+            return None
+    except Exception as e:
+        return None
+    remote_ip = session_info.request.remote_ip
+    st.write(remote_ip)
+    return remote_ip
+
+
+
+
+## SESSION STATE 
+#########################################
+if "messages" not in st.session_state:
+    st.session_state.messages = [{"role": "assistant", "content":"Welcome to Workbench"}]
+
+if "retriever_from_llm" not in st.session_state:
+    st.session_state["retriever_from_llm"] = False
+
+# Function to send questions and get answers
+def send_questions(questions):
+    url = 'http://localhost:5000/ask'
+    data = {'messages': questions}
+    response = requests.post(url, json=data)
+    response = response.json()['response']
+    return response
+
+
+
+set_page_container_style()
+
+
+with st.sidebar:
+    option = option_menu(
+        menu_title = None,
+        options = ["Pre-Solutioning"],
+        orientation="vertical",
+        icons=['chat','list-task'],
+    )
+
+
+## 2) CHAT
+
+if option == 'Pre-Solutioning':
+    
+    with st.sidebar:
+
+        uploadedFiles = st.file_uploader(" ", accept_multiple_files=True) 
+        files_uploaded = [file.name for file in uploadedFiles]
+
+    st.markdown("<h3 style='color:#A9A9A9;'>Chat Session</h3>", unsafe_allow_html=True)
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
+
+    if prompt := st.chat_input(""):
+        print("=============================\nuser Q ---> ", prompt)
+
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        with st.chat_message("user"):
+            st.markdown(prompt)
+
+        res = send_questions(prompt)
+        st.markdown(res)
+        st.session_state.messages.append({"role": "assistant", "content": res})
+
         
+
+        
+
         
 
         
