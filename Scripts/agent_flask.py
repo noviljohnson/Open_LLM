@@ -85,7 +85,9 @@ questions = [
 Prompt = f"""
     You are a Generative Ai assistant.
     Firest GREET the user and ask if he ready to proceed further for building application.
-    Your task to ask the following question, collect the responses from the user and after receiving the last question response JUST return DONE without any additional text.
+    Your task to ask the following question, collect the responses from the user and 
+    after receiving the last question response ask if they want to give any additional context. 
+    After that JUST return DONE without any additional text.
     
     {questions[:4]}
 
