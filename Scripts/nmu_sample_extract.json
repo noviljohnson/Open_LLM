@@ -1,0 +1,107 @@
+{
+    "A. TRANSFERS TO (FROM) INSTRUCTION & GENERAL": {
+        "NON-MANDATORY TRANSFERS": {
+            "STUDENT SOCIAL & CULTURAL": {
+                "Original Budget 2023": 242541,
+                "Revised Budget 2023": 149445,
+                "Actuals 2023": -158881
+            },
+            "RESEARCH": {
+                "Original Budget 2023": -19773490,
+                "Revised Budget 2023": -22851295,
+                "Actuals 2023": -26151848
+            },
+            "PUBLIC SERVICE": {
+                "Original Budget 2023": 385547,
+                "Revised Budget 2023": -218385,
+                "Actuals 2023": -695567
+            },
+            "STUDENT FINANCIAL AID": {
+                "Original Budget 2023": -11411953,
+                "Revised Budget 2023": -11440117,
+                "Actuals 2023": -11567758
+            },
+            "AUXILIARIES": {
+                "Original Budget 2023": 394574,
+                "Revised Budget 2023": 427177,
+                "Actuals 2023": 319002
+            },
+            "INTERNAL SERVICES": {
+                "Original Budget 2023": -3826027,
+                "Revised Budget 2023": -6459725,
+                "Actuals 2023": -6985679
+            },
+            "ATHLETICS": {
+                "Original Budget 2023": -1720113,
+                "Revised Budget 2023": -1720113,
+                "Actuals 2023": -1820727
+            },
+            "HEALTH SCIENCE CENTER": {
+                "Original Budget 2023": -7303043,
+                "Revised Budget 2023": -7241842,
+                "Actuals 2023": -7236012
+            }
+        },
+        "MANDATORY TRANSFERS": {
+            "PLANT FUND DEBT SVC": {
+                "Original Budget 2023": -228310,
+                "Revised Budget 2023": -228310,
+                "Actuals 2023": -228310
+            },
+            "LOAN FUNDS TOTAL MANDATORY TRANSFERS": {
+                "Original Budget 2023": 0,
+                "Revised Budget 2023": 0,
+                "Actuals 2023": 0
+            }
+        },
+        "REQUIRED TRANSFERS": {
+            "STUDENT FINANCIAL AID GRANTS AND STIPENDS-3%": {
+                "Original Budget 2023": -4858258,
+                "Revised Budget 2023": -4858258,
+                "Actuals 2023": -4858258
+            },
+            "BLDG. RENEWAL/REPLACEMENT": {
+                "Original Budget 2023": -9767405,
+                "Revised Budget 2023": -9767405,
+                "Actuals 2023": -9767405
+            },
+            "BLDG. RENEWAL/REPLACEMENT-ONE-TIME": {
+                "Original Budget 2023": -2964424,
+                "Revised Budget 2023": -2964424,
+                "Actuals 2023": -2964424
+            }
+        }
+    },
+    "B. TO (FROM) STUDENT SOCIAL CULTURAL": {
+        "I & G": {
+            "Original Budget 2023": -242541,
+            "Revised Budget 2023": -149445,
+            "Actuals 2023": 158881
+        },
+        "PLANT FUND MINOR/MAJOR": {
+            "Original Budget 2023": 0,
+            "Revised Budget 2023": -399205,
+            "Actuals 2023": -399205
+        },
+        "RESEARCH": {
+            "Original Budget 2023": 0,
+            "Revised Budget 2023": 25613,
+            "Actuals 2023": 25613
+        },
+        "PUBLIC SERVICE": {
+            "Original Budget 2023": -31916,
+            "Revised Budget 2023": -65807,
+            "Actuals 2023": -33891
+        },
+        "INTERNAL SERVICE": {
+            "Original Budget 2023": 738542,
+            "Revised Budget 2023": 749648,
+            "Actuals 2023": 749648
+        },
+        "STUDENT AID": {
+            "Original Budget 2023": -41791,
+            "Revised Budget 2023": -42491,
+            "Actuals 2023": -42491
+        }
+    }
+}
