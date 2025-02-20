@@ -1,0 +1,115 @@
+{
+    "Exhibit 10 - UNM MAIN Campus": {
+
+      "Academic Administration & Personnel Development": {
+        "School of Law LAW":{
+            "School of Law LAW": {
+            "Original Budget 2023 PERIOD 14": {
+                "Unrestricted": 155100,
+                "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+                "Unrestricted": 155100,
+                "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+                "Unrestricted": 160365.52,
+                "Restricted": 0
+            }
+            }
+        }
+      },
+      "Community Education": {
+        "Continuing Education Cont Ed": {
+          "Original Budget 2023 PERIOD 14": {
+            "Unrestricted": 526008,
+            "Restricted": 0
+          },
+          "Revised Budget 2023 PERIOD 14": {
+            "Unrestricted": 1483713,
+            "Restricted": 0
+          },
+          "Actuals 2023 PERIOD 14": {
+            "Unrestricted": 181344.33,
+            "Restricted": 0
+          }
+        }
+      },
+      "General Academic": {
+        "UNM Online": {
+          "Original Budget 2023 PERIOD 14": {
+            "Unrestricted": 1565677,
+            "Restricted": 0
+          },
+          "Revised Budget 2023 PERIOD 14": {
+            "Unrestricted": 1541677,
+            "Restricted": 0
+          },
+          "Actuals 2023 PERIOD 14": {
+            "Unrestricted": 1510935.84,
+            "Restricted": 0
+          }
+        }
+      },
+      "General Academic Instruction": {
+        "Academic Affairs Monitoring": {
+          "Original Budget 2023 PERIOD 14": {
+            "Unrestricted": 278000,
+            "Restricted": 0
+          },
+          "Revised Budget 2023 PERIOD 14": {
+            "Unrestricted": 341725,
+            "Restricted": 0
+          },
+          "Actuals 2023 PERIOD 14": {
+            "Unrestricted": 55414.76,
+            "Restricted": 0
+          }
+        },
+        "EVP for Academic Affairs": {
+          "Original Budget 2023 PERIOD 14": {
+            "Unrestricted": 6509531,
+            "Restricted": 0
+          },
+          "Revised Budget 2023 PERIOD 14": {
+            "Unrestricted": 2301607,
+            "Restricted": 0
+          },
+          "Actuals 2023 PERIOD 14": {
+            "Unrestricted": 288290.63,
+            "Restricted": 0
+          }
+        }
+      },
+      "General Academic Instruction (continued)": {
+        "Anderson Schools of Management ASM": {
+          "Original Budget 2023 PERIOD 14": {
+            "Unrestricted": 11553591,
+            "Restricted": 0
+          },
+          "Revised Budget 2023 PERIOD 14": {
+            "Unrestricted": 12925993,
+            "Restricted": 0
+          },
+          "Actuals 2023 PERIOD 14": {
+            "Unrestricted": 13486340.85,
+            "Restricted": 0
+          }
+        },
+        "College of Arts & Sciences A&S": {
+          "Original Budget 2023 PERIOD 14": {
+            "Unrestricted": 205086,
+            "Restricted": 0
+          },
+          "Revised Budget 2023 PERIOD 14": {
+            "Unrestricted": 262660,
+            "Restricted": 0
+          },
+          "Actuals 2023 PERIOD 14": {
+            "Unrestricted": 255061.83,
+            "Restricted": 0
+          }
+        }
+      }
+    }
+  }
