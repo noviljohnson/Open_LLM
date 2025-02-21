@@ -1,0 +1,554 @@
+{
+    "Exhibit 10 - UNM MAIN Campus": {
+      "General Academic": {
+        "School of Engineering SOE": {
+          "Engineering General": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 481580,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 476994,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 435376.63,
+              "Restricted": 0
+            }
+          },
+          "Academic": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            }
+          },
+          "Mechanical Engineering": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 3184840,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 3248945,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 3159030.27,
+              "Restricted": 0
+            }
+          }
+        },
+        "School of Law LAW": {
+          "Law": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 7117683,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 7189179,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 6611420.08,
+              "Restricted": 0
+            }
+          }
+        },
+        "University College UC": {
+          "AFROTC": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 42062,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 23817.9,
+              "Restricted": 0
+            }
+          },
+          "Army ROTC": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 72491,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 57173.97,
+              "Restricted": 0
+            }
+          },
+          "NROTC": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 34893,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 16916.53,
+              "Restricted": 0
+            }
+          },
+          "University College": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 661141,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 805862,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 721870.76,
+              "Restricted": 0
+            }
+          }
+        },
+        "VP Student Affairs": {
+          "AFROTC": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 105164,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 0.01,
+              "Restricted": 0
+            }
+          },
+          "Administration": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            }
+          },
+          "Army ROTC": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 69857,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            }
+          },
+          "Curanderismo Class": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 14810,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            }
+          },
+          "NROTC": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 71756,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 31.23,
+              "Restricted": 0
+            }
+          },
+          "VP for Equity and Inclusion": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 258361,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 82361,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 11158.5,
+              "Restricted": 0
+            }
+          }
+        }
+      },
+      "Total General Academic Instruction": {
+        "Original Budget 2023 PERIOD 14": {
+          "Unrestricted": 184188213,
+          "Restricted": 0
+        },
+        "Revised Budget 2023 PERIOD 14": {
+          "Unrestricted": 0,
+          "Restricted": 0
+        },
+        "Actuals 2023 PERIOD 14": {
+          "Unrestricted": 0,
+          "Restricted": 0
+        }
+      },
+      "Off-Campus Extension": {
+        "UNM Online": {
+          "Extended Services": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 60000,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 42347,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 4557.32,
+              "Restricted": 0
+            }
+          },
+          "Internet Pilot Project": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 17965.67,
+              "Restricted": 0
+            }
+          }
+        }
+      },
+      "Total Off-Campus Extension": {
+        "Original Budget 2023 PERIOD 14": {
+          "Unrestricted": 60000,
+          "Restricted": 0
+        },
+        "Revised Budget 2023 PERIOD 14": {
+          "Unrestricted": 42347,
+          "Restricted": 0
+        },
+        "Actuals 2023 PERIOD 14": {
+          "Unrestricted": 22522.99,
+          "Restricted": 0
+        }
+      },
+      "Other": {
+        "EVP Admin Independent": {
+          "I&G Programs": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 2850000
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 503294
+            }
+          }
+        }
+      },
+      "Total Other": {
+        "Original Budget 2023 PERIOD 14": {
+          "Unrestricted": 0,
+          "Restricted": 0
+        },
+        "Revised Budget 2023 PERIOD 14": {
+          "Unrestricted": 0,
+          "Restricted": 2850000
+        },
+        "Actuals 2023 PERIOD 14": {
+          "Unrestricted": 0,
+          "Restricted": 503294
+        }
+      },
+      "Student Services": {
+        "Provost Administrative": {
+          "International Services": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 112800,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 112800,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 1596.51,
+              "Restricted": 0
+            }
+          }
+        }
+      },
+      "Total Student Services Administration": {
+        "Original Budget 2023 PERIOD 14": {
+          "Unrestricted": 112800,
+          "Restricted": 0
+        },
+        "Revised Budget 2023 PERIOD 14": {
+          "Unrestricted": 112800,
+          "Restricted": 0
+        },
+        "Actuals 2023 PERIOD 14": {
+          "Unrestricted": 1596.51,
+          "Restricted": 0
+        }
+      },
+      "Items not in Exhibit": {
+        "Computer Service": {
+          "Supplies_Expense": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 6107845,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 6107845,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 6107845,
+              "Restricted": 0
+            }
+          }
+        },
+        "Sub-Total: Computer Service": {
+          "Original Budget 2023 PERIOD 14": {
+            "Unrestricted": 6107845,
+            "Restricted": 0
+          },
+          "Revised Budget 2023 PERIOD 14": {
+            "Unrestricted": 6107845,
+            "Restricted": 0
+          },
+          "Actuals 2023 PERIOD 14": {
+            "Unrestricted": 6107845,
+            "Restricted": 0
+          }
+        },
+        "Contingency": {
+          "Retirement": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 2948.75,
+              "Restricted": 0
+            }
+          },
+          "Supplies_Expense": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": -431426.34,
+              "Restricted": 0
+            }
+          }
+        },
+        "Sub-Total: Contingency": {
+          "Original Budget 2023 PERIOD 14": {
+            "Unrestricted": 0,
+            "Restricted": 0
+          },
+          "Revised Budget 2023 PERIOD 14": {
+            "Unrestricted": 0,
+            "Restricted": 0
+          },
+          "Actuals 2023 PERIOD 14": {
+            "Unrestricted": -428477.59,
+            "Restricted": 0
+          }
+        },
+        "Fringe Benefits": {
+          "Accrued Annual Leave": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": -402.72,
+              "Restricted": 0
+            }
+          },
+          "Other Staff Benefits": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 247645,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 238491,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            }
+          },
+          "Retirement": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 54875,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 54875,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 31400,
+              "Restricted": 0
+            }
+          },
+          "Supplies_Expense": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 125,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": -62226,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 1268.2,
+              "Restricted": 0
+            }
+          }
+        },
+        "Sub-Total: Fringe Benefits": {
+          "Original Budget 2023 PERIOD 14": {
+            "Unrestricted": 302645,
+            "Restricted": 0
+          },
+          "Revised Budget 2023 PERIOD 14": {
+            "Unrestricted": 231140,
+            "Restricted": 0
+          },
+          "Actuals 2023 PERIOD 14": {
+            "Unrestricted": 32265.48,
+            "Restricted": 0
+          }
+        },
+        "Workstudy": {
+          "Federal Workstudy Salaries": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 334000
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 148076
+            }
+          },
+          "State Workstudy Salaries": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 450000
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 267451
+            }
+          }
+        },
+        "Sub-Total: Workstudy": {
+          "Original Budget 2023 PERIOD 14": {
+            "Unrestricted": 0,
+            "Restricted": 0
+          },
+          "Revised Budget 2023 PERIOD 14": {
+            "Unrestricted": 0,
+            "Restricted": 784000
+          },
+          "Actuals 2023 PERIOD 14": {
+            "Unrestricted": 0,
+            "Restricted": 415527
+          }
+        }
+      },
+      "Total Items not in Exhibit": {
+        "Original Budget 2023 PERIOD 14": {
+          "Unrestricted": 6410490,
+          "Restricted": 784000
+        },
+        "Revised Budget 2023 PERIOD 14": {
+          "Unrestricted": 6338985,
+          "Restricted": 784000
+        },
+        "Actuals 2023 PERIOD 14": {
+          "Unrestricted": 5711632.89,
+          "Restricted": 415527
+        }
+      },
+      "Total": {
+        "Original Budget 2023 PERIOD 14": {
+          "Unrestricted": 0,
+          "Restricted": 0
+        },
+        "Revised Budget 2023 PERIOD 14": {
+          "Unrestricted": 0,
+          "Restricted": 0
+        },
+        "Actuals 2023 PERIOD 14": {
+          "Unrestricted": 193018288,
+          "Restricted": 3634000
+        }
+      }
+    }
+  }
