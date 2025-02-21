@@ -1,0 +1,454 @@
+{
+    "Exhibit 10 - UNM MAIN Campus": {
+      "General Academic Instruction": {
+        "College of Ed & Human Science COEHS": {
+          "Afro American Studies": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 0,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 664.39,
+              "Restricted": 0
+            }
+          },
+          "Art Education": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 10000,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 10000,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 523.23,
+              "Restricted": 0
+            }
+          },
+          "CIMTE": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 2659066,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 3234168,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 2619054.5,
+              "Restricted": 0
+            }
+          },
+          "Center for Tech/Educ": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 185365,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 185521,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 168977.03,
+              "Restricted": 0
+            }
+          },
+          "Counseling/Family Studies": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 3190999,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 3509207,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 3128819.06,
+              "Restricted": 0
+            }
+          },
+          "Educ. Foundations": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 1285469,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 1451036,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 1309147.72,
+              "Restricted": 0
+            }
+          },
+          "Education Administration": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 105000,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 105000,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 128738.66,
+              "Restricted": 0
+            }
+          },
+          "General Academic-Education": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 1102999,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 1608655,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 616775.29,
+              "Restricted": 0
+            }
+          },
+          "HPER": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 2933840,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 2988547,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 2811667.16,
+              "Restricted": 0
+            }
+          },
+          "Special Education": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 2160119,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 2160119,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 1803341.6,
+              "Restricted": 0
+            }
+          }
+        },
+        "College of Fine Arts CFA": {
+          "Art": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 6347728,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 6646611,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 6476822.79,
+              "Restricted": 0
+            }
+          },
+          "Arts Laboratory Film/Digital Media": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 107007,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 107007,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 108487.55,
+              "Restricted": 0
+            }
+          },
+          "Fine Arts General Academic": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 213343,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 214168,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 204031.88,
+              "Restricted": 0
+            }
+          },
+          "Music": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 5876913,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 5812818,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 5835425.86,
+              "Restricted": 0
+            }
+          },
+          "Theatre Arts": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 3852632,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 3903844,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 4206037.71,
+              "Restricted": 0
+            }
+          }
+        },
+        "College of Univ Lbry & Learning Sci": {
+          "Education Administration": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 1066932,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 1155171,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 1079129.93,
+              "Restricted": 0
+            }
+          }
+        },
+        "Honors College": {
+          "General Honors": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 2066786,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 2199226,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 2176964.97,
+              "Restricted": 0
+            }
+          }
+        },
+        "Provost Administrative Units": {
+          "CAPS": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 3385301,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 3849748,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 3239415.85,
+              "Restricted": 0
+            }
+          },
+          "EVP for Academic Affairs": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 2591228,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 1908815,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 1502354.97,
+              "Restricted": 0
+            }
+          },
+          "GNSPI": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 147259,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 326486,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 104565.9,
+              "Restricted": 0
+            }
+          },
+          "Nanoscience & Microsystems": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 74217,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 127383,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 97881.43,
+              "Restricted": 0
+            }
+          },
+          "Optical Science and Engineering": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 147626,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 193406,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 132331.9,
+              "Restricted": 0
+            }
+          },
+          "Public Administration": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 229502,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 217437,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 194828.17,
+              "Restricted": 0
+            }
+          },
+          "TARC": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 2238083,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 2238083,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 1959205.8,
+              "Restricted": 0
+            }
+          }
+        },
+        "School of Architecture & Planning": {
+          "Architecture & Planning": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 4830640,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 4819514,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 4638614.46,
+              "Restricted": 0
+            }
+          }
+        },
+        "School of Engineering SOE": {
+          "Aerospace Engr Institute Expansion": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 43209,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 43209,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 43356.59,
+              "Restricted": 0
+            }
+          },
+          "Biomedical Engineering Program": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 55080,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 55080,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 11406.48,
+              "Restricted": 0
+            }
+          },
+          "Chemical/Nuclear Engineering": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 5148519,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 5123066,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 4790815.95,
+              "Restricted": 0
+            }
+          },
+          "Civil Engineering": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 3171131,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 3031375,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 2818947.56,
+              "Restricted": 0
+            }
+          },
+          "Computer Science": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 4434022,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 4331417,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 4007695.81,
+              "Restricted": 0
+            }
+          },
+          "Electrical/Computer Engineering": {
+            "Original Budget 2023 PERIOD 14": {
+              "Unrestricted": 5488583,
+              "Restricted": 0
+            },
+            "Revised Budget 2023 PERIOD 14": {
+              "Unrestricted": 5634700,
+              "Restricted": 0
+            },
+            "Actuals 2023 PERIOD 14": {
+              "Unrestricted": 5402372.7,
+              "Restricted": 0
+            }
+          }
+        }
+      }
+    }
+  }
