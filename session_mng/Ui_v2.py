@@ -66,6 +66,7 @@ BASE_API_URL = "http://127.0.0.1:8004"
 create_user = f"{BASE_API_URL}/users/"
 get_user_sessions = "{BASE_API_URL}/users/{user_id}/sessions/"
 create_chat_session = f"{BASE_API_URL}/sessions/"
+get_chat_history = "{BASE_API_URL}/users/{session_id}/chat_history/"
 query = f"{BASE_API_URL}/query/"
 
 # Function to get the IP address of the user
@@ -133,7 +134,7 @@ if st.session_state["verified"].get("verified", False):
         app_options = ["App1", "App2", "App3", "App4"]
         app_selected = st.selectbox("Select App", app_options)
 
-        if app_selected == "App1":
+        if app_selected in ["App1", "App2", "App3", "App4"]: # modify for all chats
             sessions = list(set(["New Chat"]+retrieve_sessions(usr_ses.json(), app_selected)))
             chat_selected = st.selectbox("Select Chat", sessions)
             
@@ -143,10 +144,15 @@ if st.session_state["verified"].get("verified", False):
                                                "session_name": create_chatName(sessions),
                                                "app_name": app_selected})
             else:
-                st.session_state['Chat_history'][app_selected][chat_selected] = True # update this 
- 
+                if st.session_state['Chat_history'][app_selected][chat_selected] == {}:
+                    st.session_state['Chat_history'][app_selected][chat_selected] = requests.get(get_chat_history.format(BASE_API_URL=BASE_API_URL, 
+                                                                                                                         session_id='0d40a094-d62d-4c41-9054-09937aa688af'))
 
-    # Rest of the code
+
+                # update this : if empty {} then call get chat history
+                # else disply
+
+ 
 else:
     if "user_name" not in st.session_state:
         user_name = st.text_input("Please enter User name: ")
