@@ -16,7 +16,8 @@
 
 from uuid import UUID
 import uuid
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException, Depends, UploadFile, File
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, Text, DateTime
 from sqlalchemy.dialects.postgresql import UUID as PostgresUUID
@@ -24,7 +25,29 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 from datetime import datetime
 import requests
+import shutil
 import json
+import os
+import boto3
+
+from typing import List
+
+### for direct llms
+from configparser import ConfigParser
+from llama_index.embeddings.bedrock import BedrockEmbedding
+from llama_index.llms.bedrock import Bedrock
+from llama_index.core.llms import ChatMessage
+import os
+
+
+# Step 1: Load AWS configuration
+config_object = ConfigParser()
+config_object.read(r"E:\Ollama_models\scripts\hf_config.config")
+aws_info = config_object["AWS"]
+
+s3 = boto3.client('s3', aws_access_key_id=aws_info['aws_access_key_id'],aws_secret_access_key=aws_info['aws_secret_access_key'])
+
+
 
 """
 This is a FastAPI application that provides endpoints for user management and chat sessions.
@@ -61,7 +84,6 @@ class User(Base):
     chat_histories = relationship("ChatHistory", back_populates="user")
     # email = Column(String, unique=True, nullable=False)
     
-
 
 class ChatSession(Base):
     """
@@ -235,6 +257,8 @@ class QueryRequest(BaseModel):
     user_id: UUID
     session_id: UUID
     query: str
+    app_name: str
+    model_name: str = "Claude 3"
 
     # def __init__(self, user_id: int, session_id: UUID, query: str):
     #     """
@@ -248,6 +272,18 @@ class QueryRequest(BaseModel):
     #     self.user_id = user_id
     #     self.session_id = session_id
     #     self.query = query
+
+class UserData(BaseModel):
+    """
+    This is a Pydantic model for uploading files for DocuMentors.
+    
+    Attributes:
+        user_id (uuid): The ID of the chat session associated with this chat message.
+        files: List of files that user uploaded
+    """
+    user_id: UUID
+    # files: List[UploadFile] = File(...)
+
 
 def get_db():
     """
@@ -282,6 +318,8 @@ def user_verify(user: UserCheck, db=Depends(get_db)):
     * Sample API call: requests.post("http://localhost:8000/verify/", json={"user_ip": "10.8.90.14"})
     """
     user_check =db.query(User).filter(User.user_ip == user.user_ip).first()
+    # passing table stucture with table name
+    # passing query: filter query, user_ip from table vs user ip from api call
     if not user_check:
         raise HTTPException(status_code=404, detail="User Not Found")
     return {"user_id": user_check.user_id, "user_ip": user_check.user_ip, "user_name": user_check.user_name, "verified":True}
@@ -301,7 +339,7 @@ def create_user(user: UserCreate, db=Depends(get_db)):
     To make an API call:
     * Method: POST
     * URL: /users/
-    * Data: {"username": "username", "email": "email@example.com"}
+    * Data: {"username": "username", "user_ip": "10.80.9.14"}
     * Sample API call: requests.post("http://localhost:8000/users/", json={"user_name": "username", "user_ip": "10.8.90.14"})
     """
     new_user = User(user_ip=user.user_ip, user_name=user.user_name)
@@ -356,7 +394,6 @@ def get_chat_history(session_id: UUID, db=Depends(get_db)):
     if not history:
         raise HTTPException(status_code=404, detail=f"No chat history found for this this session : {session_id}")
     return [{"session_id": s.session_id, "app_name": s.app_name, "message":s.message, "sender":s.sender, "timestamp":s.created_at} for s in history]
-
 
 
 @app.post("/sessions/", response_model=dict)
@@ -441,23 +478,31 @@ def query(request: QueryRequest, db=Depends(get_db)):
     * Method: POST
     * URL: /query/
     * Data: {"user_id": 1, "session_id": 1, "query": "query"}
-    * Sample API call: requests.post("http://localhost:8000/query/", json={"user_id": 1, "session_id": 1, "query": "query"})
+    * Sample API call: requests.post("http://localhost:8000/query/", json={"user_id": 1, "session_id": 1, "query": "query", "app_name":"APP"})
+    * if the user selects Direct LLMs then the payload will be : json={"user_id": 1, "session_id": 1, "query": "query", "app_name":"APP", "model_name":"LLM name"}
     """
+    user = db.query(User).filter(User.user_id  == request.user_id).first()
+    if not user:
+        print(user)
+        raise HTTPException(status_code=404, detail="User not found")
+    
     session = db.query(ChatSession).filter(ChatSession.session_id == request.session_id).first()
     if not session:
         print(session)
         raise HTTPException(status_code=404, detail="Chat session not found")
     
-    user = db.query(User).filter(User.user_id  == request.user_id).first()
-    if not user:
-        print(user)
-        raise HTTPException(status_code=404, detail="User not found")
 
     try:
-        app_url = get_app_url(session.app_name)
-        response = requests.post(app_url, json={"message": str(request.query)})
-        response.raise_for_status()
-        response_data = response.json()
+        if session.app_name in ["FailWise","RuleRadar"]: 
+            app_url = get_app_url(session.app_name)
+            response = requests.post(app_url, json={"message": str(request.query)})
+            response.raise_for_status()
+            response_data = response.json() 
+        elif request.app_name == "DocuMentor":
+            pass
+        elif session.app_name == "Direct LLMs":
+            response_data = {"response":llm_response(str(request.query), request.model_name)}
+
         new_message = ChatHistory(session_id=request.session_id, 
                                   user_id=user.user_id, 
                                   app_name=session.app_name, 
@@ -479,6 +524,47 @@ def query(request: QueryRequest, db=Depends(get_db)):
     except requests.exceptions.RequestException as e:
         raise HTTPException(status_code=500, detail="Failed to send query to LLM")
 
+@app.post("/uploadfile/", response_model=dict)
+async def create_upload_file( user_data: UserData, files: List[UploadFile] = File(...), db=Depends(get_db)):
+    user = db.query(User).filter(User.user_id  == user_data.user_id).first()
+    if not user:
+        print(user)
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    try:
+        # create a session id for a user session for file storage in AWS s3
+        session_id = datetime.now().strftime('%Y%m%d%H%M%S%f')
+
+        # create a temporary folder to store the uploaded files
+        temp_dir = os.path.join(os.getcwd(),'temp-'+user_data.user_id)
+
+        for file in files:
+            file_path = os.path.join(temp_dir, file.name)
+            # with open(file_path, 'wb') as f:
+            #     f.write(file.getvalue())
+            
+            with open(file_path, "wb") as buffer:
+                shutil.copyfileobj(file.file, buffer)
+
+            # s3_filename = os.path.basename(file_path)
+            s3_key = f"{user.user_ip}/{session_id}/{file.name}"
+            s3.upload_file(file_path, aws_info["bucket_name"], s3_key)
+            
+
+        ## Clean up the temporary directory
+        if os.path.isdir(temp_dir):
+            shutil.rmtree(temp_dir,ignore_errors=True)
+
+        return {
+            "s3_filepath": f"{user.user_ip}/{session_id}"
+        }
+
+    except Exception as e:
+        return JSONResponse(content={
+            "error": str(e)
+        }, status_code=500)
+
+
 
 def get_app_url(app_name):
     """
@@ -491,11 +577,16 @@ def get_app_url(app_name):
         str: The URL of the app.
     """
     apps = {
-        "APP1": "http://localhost:8081",
+        "FailWise": 'http://10.60.90.31:5001',
+        "RuleRadar": 'http://10.60.90.31:5001',
         "APP2": "http://localhost:8082",
         "APP3": "http://172.27.109.125:8005/chat",#"http://127.0.0.1:8003/chat",
         "Open_LLMs": "http://localhost:8084"
     }
+    
+    # saturn_flask_url = 'http://10.8.30.14:5000/'
+    saturn_flask_url = 'http://10.60.90.54:5000'
+    ruleradar_v2_flask = "http://10.60.90.31:5002"
     return apps.get(app_name)
 
 
@@ -513,6 +604,72 @@ def send_message_to_app(app_url, message, session_id):
     response = requests.post(url, json=data)
     if response.status_code != 200:
         raise HTTPException(status_code=500, detail="Failed to send message to app")
+
+
+
+########## Direct LLM from AWS Bedrock
+
+
+
+# Step 2: Initialize Bedrock LLM and embedding model
+bedrock_models_list = {"Claude 3":"anthropic.claude-3-sonnet-20240229-v1:0",
+            "Llama 3 8B Instruct": "meta.llama3-8b-instruct-v1:0"
+ }
+
+System_prompt_for_BedrockModels ="""You are a Genarative ai assistant, please respond to the user queries based on following instructions 
+                - Do not Give too much information for Direct and short questions
+                - Give Structured point wise answers for Questions that require lengthy explanations
+                - Always give responses in Markdown format so that the structure will be maintained in the UI
+                - DO NOT return any other tokens (like <SYS>, <END> etc...)
+                """
+
+
+# Generate LLM response
+def llm_response(message, model_id="Claude 3", models_list=bedrock_models_list):
+
+    llm = Bedrock(
+    model=models_list[model_id],
+    region_name="us-east-1",
+    aws_access_key_id=aws_info["aws_access_key_id"],
+    aws_secret_access_key=aws_info["aws_secret_access_key"]
+    )
+
+    messages = [
+        ChatMessage(
+            role="system", 
+            content= System_prompt_for_BedrockModels
+        ),
+        ChatMessage(
+            role="user", content=message
+        ),
+    ]
+    response = llm.chat(messages)
+    return response.message.content.strip()  # Correctly formatted title
+
+
+
+
+
+
+
+
+
+
+#### Embedding model initialization # use if required
+# embedding_model = BedrockEmbedding(
+#     model_name="amazon.titan-embed-text-v2:0",
+#     region_name="us-east-1",
+#     aws_access_key_id=aws_info["aws_access_key_id"],
+#     aws_secret_access_key=aws_info["aws_secret_access_key"]
+# )
+
+
+
+
+
+
+
+
 
 
 
@@ -551,3 +708,8 @@ def send_message_to_app(app_url, message, session_id):
 # """
 
 # logging
+# authentication
+# Exception
+# Sage integration
+# Attachiments handling - Documentor
+# Direct llms (AWS llm access)
