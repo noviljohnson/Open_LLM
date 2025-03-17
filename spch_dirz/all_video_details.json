@@ -1,0 +1,50 @@
+[
+    {
+        "video_link": "https://sg001-harmony.sliq.net/00293/Harmony/en/PowerBrowser/PowerBrowserV2/20250224/-1/77035",
+        "m3u8_link": "https://sg002-live.sliq.net/00293-vod-2/_definst_/2025/03/15/Test%20Meeting_2025-03-15-10.59.55_77035_6.mp4/playlist.m3u8",
+        "description": "Test Meeting",
+        "location": "House Chamber",
+        "scheduled": {
+            "day": "Saturday",
+            "month": "Mar",
+            "date": "15",
+            "year": "2025",
+            "start_time": "10:59 AM",
+            "end_time": "11:02 AM",
+            "duration": "2 Minutes"
+        },
+        "actual": {
+            "day": "Saturday",
+            "month": "Mar",
+            "date": "15",
+            "year": "2025",
+            "start_time": "10:59 AM",
+            "end_time": "11:02 AM",
+            "duration": "2 Minutes"
+        }
+    },
+    {
+        "video_link": "https://sg001-harmony.sliq.net/00293/Harmony/en/PowerBrowser/PowerBrowserV2/20250224/-1/77026",
+        "m3u8_link": "https://sg002-live.sliq.net/00293-vod-2/_definst_/2025/03/15/House%20-%20Judiciary_2025-03-15-08.44.00_77026_26.mp4/playlist.m3u8",
+        "description": "House Judiciary",
+        "location": "Room 309",
+        "scheduled": {
+            "day": "Saturday",
+            "month": "Mar",
+            "date": "15",
+            "year": "2025",
+            "start_time": "8:44 AM",
+            "end_time": "10:42 AM",
+            "duration": "1 Hour 58 Minutes"
+        },
+        "actual": {
+            "day": "Saturday",
+            "month": "Mar",
+            "date": "15",
+            "year": "2025",
+            "start_time": "8:44 AM",
+            "end_time": "10:42 AM",
+            "duration": "1 Hour 58 Minutes"
+        }
+    }
+]
