@@ -48,6 +48,7 @@ def split_date(date_text):
 
 
 
+
 all_video_details = []
 
 for url2 in video_links[:2]:
@@ -70,6 +71,8 @@ for url2 in video_links[:2]:
     actual_date = soup.find("div", id="actualdate")
     actual_time = soup.find("div", id="actualtime")
     actual_duration = soup.find("div", id="actualduration")
+    # Extract Legislature and Session
+    legislature_info = soup.find("div", id="divCategoryName")
 
     # Clean and split times
     scheduled_start, scheduled_end = split_time_range(scheduled_time.text if scheduled_time else "")
@@ -79,8 +82,18 @@ for url2 in video_links[:2]:
     scheduled_day, scheduled_month, scheduled_date_num, scheduled_year = split_date(scheduled_date.text if scheduled_date else "Unknown")
     actual_day, actual_month, actual_date_num, actual_year = split_date(actual_date.text if actual_date else "Unknown")
 
+    if legislature_info:
+        legislature_text = legislature_info.text.strip()
+        parts = legislature_text.split(", ")
+        legislature = parts[0] if len(parts) > 0 else "Unknown Legislature"
+        session = parts[1] if len(parts) > 1 else "Unknown Session"
+    else:
+        legislature = "Unknown Legislature"
+        session = "Unknown Session"
     # Build video details dictionary
     video_info = {
+        "legislature":legislature,
+        "session":session,
         "video_link":url2,
         "m3u8_link": "https" + m3u8_links[0].split('https')[-1] if m3u8_links else None,
         "description": clean_text(description.text) if description else clean_text(fallback_description.text) if fallback_description else "Unknown",
@@ -112,5 +125,5 @@ for url2 in video_links[:2]:
 #     print(video)
 
 import json
-with open("all_video_details.json", "w") as f:
+with open("all_video_details_2.json", "w") as f:
     json.dump(all_video_details, f, indent=4)

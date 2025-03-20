@@ -1,0 +1,54 @@
+[
+    {
+        "legislature": "Unknown Legislature",
+        "session": "Unknown Session",
+        "video_link": "https://sg001-harmony.sliq.net/00293/Harmony/en/PowerBrowser/PowerBrowserV2/20250224/-1/77060",
+        "m3u8_link": "https://sg002-live.sliq.net/00293-vod-2/_definst_/2025/03/16/Senate%20-%20Health%20and%20Public%20Affairs_2025-03-16-16.45.25_77060_30.mp4/playlist.m3u8",
+        "description": "Senate - Health and Public Affairs",
+        "location": "Room 311",
+        "scheduled": {
+            "day": "Sunday",
+            "month": "Mar",
+            "date": "16",
+            "year": "2025",
+            "start_time": "4:45 PM",
+            "end_time": "7:18 PM",
+            "duration": "2 Hours 33 Minutes"
+        },
+        "actual": {
+            "day": "Sunday",
+            "month": "Mar",
+            "date": "16",
+            "year": "2025",
+            "start_time": "4:45 PM",
+            "end_time": "7:18 PM",
+            "duration": "2 Hours 33 Minutes"
+        }
+    },
+    {
+        "legislature": "Unknown Legislature",
+        "session": "Unknown Session",
+        "video_link": "https://sg001-harmony.sliq.net/00293/Harmony/en/PowerBrowser/PowerBrowserV2/20250224/-1/77059",
+        "m3u8_link": "https://sg002-live.sliq.net/00293-vod-2/_definst_/2025/03/16/Senate%20-%20Tax%2C%20Business%20and%20Transportation_2025-03-16-16.38.14_77059_30.mp4/playlist.m3u8",
+        "description": "Senate - Tax, Business and Transportation",
+        "location": "Room 311",
+        "scheduled": {
+            "day": "Sunday",
+            "month": "Mar",
+            "date": "16",
+            "year": "2025",
+            "start_time": "4:38 PM",
+            "end_time": "4:45 PM",
+            "duration": "7 Minutes"
+        },
+        "actual": {
+            "day": "Sunday",
+            "month": "Mar",
+            "date": "16",
+            "year": "2025",
+            "start_time": "4:38 PM",
+            "end_time": "4:45 PM",
+            "duration": "7 Minutes"
+        }
+    }
+]
